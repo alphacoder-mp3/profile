@@ -19,6 +19,11 @@ const config = {
     },
     extend: {
       colors: {
+        underlineRed: '#FF0000',
+        underlineBlue: '#0000FF',
+        underlineGreen: '#00FF00',
+        underlineOrange: '#FFA500',
+        underlinePurple: '#800080',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
