@@ -9,6 +9,7 @@ export const siteConfig = {
     twitter: 'https://x.com/tarun_pable',
     github: 'https://github.com/',
   },
+  email: 'tarunpable@gmail.com',
 };
 
 export type SiteConfig = typeof siteConfig;
