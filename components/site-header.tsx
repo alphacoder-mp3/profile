@@ -39,10 +39,11 @@ function SiteHeader() {
             key={path}
             href={path}
             className={cn(
-              `transition-colors hover:${getRandomUnderlineClass()}`,
+              'transition-colors hover:underline hover:decoration-4',
               isActive(path)
                 ? `text-zinc-100 underline font-extrabold ${getRandomUnderlineClass()}`
-                : 'text-zinc-100'
+                : 'text-zinc-100',
+              `hover:${getRandomUnderlineClass()}`
             )}
           >
             {path.substring(1) || 'home'}
@@ -50,7 +51,7 @@ function SiteHeader() {
         ))}
         <Link
           href={`mailto:${siteConfig.email}`}
-          className={`text-zinc-100 transition-colors hover:${getRandomUnderlineClass()}`}
+          className={`text-zinc-100 transition-colors hover:underline hover:decoration-4 ${getRandomUnderlineClass()}`}
         >
           Email
         </Link>
